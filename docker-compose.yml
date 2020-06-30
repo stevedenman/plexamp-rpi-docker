@@ -5,10 +5,12 @@ services:
     container_name: plexamp
     build:
       context: ./
-    image: plexamp:v2.0.0b2
+    image: plexamp-rpi:v2.0.0b2
     devices:
       - "/dev/snd:/dev/snd"
     volumes:
       - "./server.json:/root/.config/Plexamp/server.json"
     network_mode: host
+#    ports: 
+#    - "20000:20000"
     restart: unless-stopped

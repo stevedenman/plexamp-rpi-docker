@@ -1,0 +1,1 @@
+docker build -t plexamp-rpi:v2.0.0b2 .
